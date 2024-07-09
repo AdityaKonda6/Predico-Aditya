@@ -1,6 +1,13 @@
 {
-    "rewrites":[
-        { "source": "/(.*)", "destination": "/"}
+    "builds": [{
+        "src": "disease_prediction/wsgi.py",
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "disease_prediction/wsgi.py"
+        }
     ]
-    
 }
