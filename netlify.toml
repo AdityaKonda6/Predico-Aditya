@@ -5,5 +5,5 @@
 [build.environment]
   PYTHON_VERSION = "3.8"
 
-[[plugins]]
-  package = "@netlify/plugin-python"
+[build.processing]
+  skip_processing = false
