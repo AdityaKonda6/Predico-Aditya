@@ -1,0 +1,9 @@
+[build]
+  command = "pip install -r requirements.txt && python manage.py collectstatic --noinput"
+  publish = "static"
+
+[build.environment]
+  PYTHON_VERSION = "3.8"
+
+[[plugins]]
+  package = "@netlify/plugin-python"
