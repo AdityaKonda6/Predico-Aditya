@@ -1,4 +1,4 @@
-<h1 align="center">✨✨Welcome to PREDICO A Mini Project For Data Mining And Business Intelligence✨✨</h1>
+<h1 align="center">✨✨Welcome to Predico A Mini Project For Data Mining And Business Intelligence✨✨</h1>
 <h4>I have completed my Mini Project Predico using Machine Learning, Business Intelligence and Python. Give a star :)</h4>
 
 <br/>
