@@ -1,20 +1,19 @@
 #!/bin/bash
 
-# Download and install Python 3.9
-curl https://www.python.org/ftp/python/3.9.13/Python-3.9.13.tgz | tar xz
-cd Python-3.9.13
-./configure --enable-optimizations
-make -j $(nproc)
-sudo make altinstall
+# Create a virtual environment
+python3 -m venv venv
 
-# Use the newly installed Python
-export PATH="/usr/local/bin:$PATH"
-python3.9 -m venv venv
+# Activate the virtual environment
 source venv/bin/activate
 
-# Upgrade pip and install requirements
+# Upgrade pip
 python -m pip install --upgrade pip
-pip install -r ../requirements.txt
 
-# Go back to the project root
-cd ..
+# Install requirements
+pip install -r requirements.txt
+
+# Print Python version for debugging
+python --version
+
+# Print installed packages for debugging
+pip list
