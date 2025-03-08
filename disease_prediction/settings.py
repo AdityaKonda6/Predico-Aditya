@@ -26,7 +26,9 @@ SECRET_KEY = 'v3v5vfsn0xxjtmb=eoawoiw$5br4g0r&jy_l39995h_93l+-z5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["predico-aditya.onrender.com",
+    "127.0.0.1",  # Keep localhost for local development
+    "localhost"]
 
 
 # Application definition
