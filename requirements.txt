@@ -1,3 +1,4 @@
+gunicorn==21.2.0
 
 django==3.2.21  # Last LTS release in the 3.x series
 joblib==1.3.2   # Latest stable version
